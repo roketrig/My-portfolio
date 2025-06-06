@@ -1,12 +1,19 @@
 function App() {
-const projects = [
-  {
+  const projects = [
+    {
+      title: "Deadly Jokes",
+      description: "A puzzle / parkour type game which I worked as product owner, developer and 3d artist at Bootcamp. We participated in the final qualifiers by entereing the top 14 among 300+ teams.",
+      link: "https://github.com/damlaalim/bootcamp-12",
+      
+      video: "https://www.youtube.com/watch?v=kv4C_Ic69SM"
+    },
+      {
     title: "Bee Hero",
     description: `A game developed by two developers and three designers during a two-day game jam. 
 The game consists of three stages: collecting pollen and playing mini-games; protecting the pollen from threats like acid rain, rocks, and wood; and placing the pollen into the hive. 
 Built using Unity, Cinemachine, and DOTween.`,
-    link: "https://github.com/yourusername/bee-hero",
-    demo: "https://your-itch-io-link.itch.io/bee-hero"
+    link: "https://github.com/roketrig/GameAppJam",
+    demo: "https://roketrig.itch.io/beehero"
   },
   {
     title: "Time Traveler",
@@ -26,19 +33,18 @@ The car automatically crashes into selected enemies, mixing racing and idle mech
     demo: ""
   },
   {
-    title: "Idle Space Defense",
+    title: "Asteroid Miner",
     description: `An idle-defense game set in space. A robotic arm collects materials (e.g., diamond, ruby, silver), which are processed into bullets for turret defense. 
 Players can upgrade their turrets and character stats (speed, loot, capacity), and optionally control a drone to join battles against waves of UFOs. 
 Includes progression mechanics and production systems.`,
-    link: "",
+    link: "https://drive.google.com/drive/folders/1nZlzRyzhcFkuw4yDefvGZ7_SpUsNM4G5?usp=drive_link",
     demo: ""
   }
-];
-
+  ];
 
   return (
     <div style={{ padding: "2rem", fontFamily: "Arial, sans-serif" }}>
-      <h1 style={{ textAlign: "center" }}>Projelerim</h1>
+      <h1 style={{ textAlign: "center" }}>Projects</h1>
       {projects.map((proj, index) => (
         <div
           key={index}
@@ -52,8 +58,8 @@ Includes progression mechanics and production systems.`,
           <h2>{proj.title}</h2>
           <p>{proj.description}</p>
           <p>
-            <a href={proj.link} target="_blank" rel="noreferrer">GitHub Kodu</a> |{" "}
-            <a href={proj.demo} target="_blank" rel="noreferrer">Canlı Demo</a>
+            <a href={proj.link} target="_blank" rel="noreferrer">GitHub</a> |{" "}
+
           </p>
         </div>
       ))}
