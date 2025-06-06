@@ -43,6 +43,16 @@ Players can upgrade their turrets and character stats (speed, loot, capacity), a
 Includes progression mechanics and production systems.`,
     image: img11,
     link: "https://drive.google.com/drive/folders/1nZlzRyzhcFkuw4yDefvGZ7_SpUsNM4G5?usp=drive_link",
+  },
+  {
+    title: "React-Basics",
+    description: "I learned the basic react structures",
+    link:"https://github.com/roketrig/React-Basics"
+  },
+  {
+    title: "Web Development",
+    description: "My first html and css site/s",
+    link:"https://github.com/roketrig/Frontend-Web-Development"
   }
   ];
 
