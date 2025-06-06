@@ -1,3 +1,7 @@
+import img1 from './images/1.jpg';
+import img4 from './images/4.jpg';
+import img9 from './images/9.jpg';
+import img11 from './images/11.jpg';
 function App() {
   const projects = [
     {
@@ -12,7 +16,7 @@ function App() {
     description: `A game developed by two developers and three designers during a two-day game jam. 
 The game consists of three stages: collecting pollen and playing mini-games; protecting the pollen from threats like acid rain, rocks, and wood; and placing the pollen into the hive. 
 Built using Unity, Cinemachine, and DOTween.`,
-    image: "https://your-image-url.com/beehero.png",
+    image: img4,
     link: "https://github.com/roketrig/GameAppJam",
     demo: "https://roketrig.itch.io/beehero"
   },
@@ -22,12 +26,12 @@ Built using Unity, Cinemachine, and DOTween.`,
 Players travel through time to explore different versions of a war-torn planet, before and after events like civil wars or environmental collapse. 
 Each state is unlocked via quests and stones found throughout the journey. 
 Developed with Unity, Cinemachine, and DOTween.`,
-    image: "https://your-image-url.com/beehero.png",
+    image: img1,
     link: "https://github.com/yourusername/time-traveler",
   },
   {
     title: "Car-Toon (In Progress)",
-    image: "https://your-image-url.com/beehero.png",
+    image: img9,
     description: `One of my earliest game prototypes, currently being adapted for mobile platforms. 
 The player controls a yellow car with the left finger and targets enemies with the right. 
 The car automatically crashes into selected enemies, mixing racing and idle mechanics.`,
@@ -37,7 +41,7 @@ The car automatically crashes into selected enemies, mixing racing and idle mech
     description: `An idle-defense game set in space. A robotic arm collects materials (e.g., diamond, ruby, silver), which are processed into bullets for turret defense. 
 Players can upgrade their turrets and character stats (speed, loot, capacity), and optionally control a drone to join battles against waves of UFOs. 
 Includes progression mechanics and production systems.`,
-    image: "https://your-image-url.com/beehero.png",
+    image: img11,
     link: "https://drive.google.com/drive/folders/1nZlzRyzhcFkuw4yDefvGZ7_SpUsNM4G5?usp=drive_link",
   }
   ];
