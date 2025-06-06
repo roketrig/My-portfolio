@@ -47,53 +47,46 @@ Includes progression mechanics and production systems.`,
   ];
 
 return (
-  <div style={{ padding: "2rem", fontFamily: "Arial, sans-serif" }}>
+  <div style={{ padding: "2rem", fontFamily: "Arial, sans-serif", maxWidth: "900px", margin: "auto" }}>
     <h1 style={{ textAlign: "center" }}>Projects</h1>
     {projects.map((proj, index) => (
       <div
         key={index}
         style={{
           display: "flex",
-          gap: "1rem",
+          alignItems: "flex-start",
           border: "1px solid #ccc",
           borderRadius: "10px",
           padding: "1rem",
           marginBottom: "1rem",
-          alignItems: "center"
+          gap: "1rem"
         }}
       >
-        {/* Sol: Açıklamalar */}
-        <div style={{ flex: 2 }}>
+        <div style={{ flex: 1 }}>
           <h2>{proj.title}</h2>
-          <p>{proj.description}</p>
-          <p>
-            {proj.link && (
+          <p style={{ whiteSpace: "pre-line" }}>{proj.description}</p>
+          {proj.link && (
+            <p>
               <a href={proj.link} target="_blank" rel="noreferrer">GitHub</a>
-            )}
-            {proj.demo && proj.link && " | "}
-            {proj.demo && (
-              <a href={proj.demo} target="_blank" rel="noreferrer">Demo</a>
-            )}
-            {proj.video && (!proj.link && !proj.demo) && (
-              <a href={proj.video} target="_blank" rel="noreferrer">Video</a>
-            )}
-          </p>
+              {proj.demo && <> | <a href={proj.demo} target="_blank" rel="noreferrer">Demo</a></>}
+            </p>
+          )}
         </div>
-
-        {/* Sağ: Görsel */}
-        {proj.image && (
-          <div style={{ flex: 1 }}>
-            <img
-              src={proj.image}
-              alt={`${proj.title} Screenshot`}
-              style={{ width: "100%", borderRadius: "8px" }}
-            />
-          </div>
-        )}
+        <img
+          src={proj.image}
+          alt={proj.title}
+          style={{
+            width: "250px",
+            height: "150px",
+            objectFit: "cover",
+            borderRadius: "10px",
+            boxShadow: "0 2px 8px rgba(0,0,0,0.15)"
+          }}
+        />
       </div>
     ))}
   </div>
 );
-
 }
+
 export default App;
