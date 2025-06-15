@@ -2,6 +2,11 @@ import img1 from './images/1.jpg';
 import img4 from './images/4.jpg';
 import img9 from './images/9.jpg';
 import img11 from './images/11.jpg';
+import img15 from './images/15.png';
+import img14 from './images/14.png';
+import img16 from './images/16.png';
+import img17 from './images/17.png';
+import React from 'react';
 function App() {
   const projects = [
     {
@@ -47,11 +52,25 @@ Includes progression mechanics and production systems.`,
   {
     title: "React-Basics",
     description: "I learned the basic react structures",
+    image: img15,
     link:"https://github.com/roketrig/React-Basics"
   },
   {
     title: "Web Development",
     description: "My first html and css site/s",
+    image: img14,
+    link:"https://github.com/roketrig/Frontend-Web-Development"
+  },
+    {
+    title: "cinartekne.com",
+    description: "My first html and css site/s",
+    image: img17,
+    link:"https://github.com/roketrig/Frontend-Web-Development"
+  },
+    {
+    title: "ecedemirci.com",
+    description: "My first html and css site/s",
+    image: img16,
     link:"https://github.com/roketrig/Frontend-Web-Development"
   }
   ];
