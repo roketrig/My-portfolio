@@ -96,7 +96,7 @@ return (
           <p style={{ whiteSpace: "pre-line" }}>{proj.description}</p>
           {proj.link && (
             <p>
-              <a href={proj.link} target="_blank" rel="noreferrer">GitHub</a>
+              <a href={proj.link} target="_blank" rel="noreferrer">Link</a>
               {proj.demo && <> | <a href={proj.demo} target="_blank" rel="noreferrer">Demo</a></>}
             </p>
           )}
