@@ -65,13 +65,13 @@ Includes progression mechanics and production systems.`,
     title: "cinartekne.com",
     description: "My first html and css site/s",
     image: img17,
-    link:"https://github.com/roketrig/Frontend-Web-Development"
+    link:"https://cinartekne.com/"
   },
     {
     title: "ecedemirci.com",
     description: "My first html and css site/s",
     image: img16,
-    link:"https://github.com/roketrig/Frontend-Web-Development"
+    link:"http://www.ecedemirci.com/"
   }
   ];
 
