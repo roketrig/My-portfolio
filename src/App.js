@@ -6,6 +6,8 @@ import img15 from './images/15.png';
 import img14 from './images/14.png';
 import img16 from './images/16.png';
 import img17 from './images/17.png';
+import img18 from './images/img18.png'
+import img19 from './images/img19.png'
 import React from 'react';
 function App() {
   const projects = [
@@ -49,6 +51,12 @@ Includes progression mechanics and production systems.`,
     image: img11,
     link: "https://drive.google.com/drive/folders/1nZlzRyzhcFkuw4yDefvGZ7_SpUsNM4G5?usp=drive_link",
   },
+    {
+    title: "2048",
+    description: `Classic 2048 puzzle game for mobile.`,
+    image: img18,
+    link: "https://github.com/roketrig/2048",
+  },
   {
     title: "React-Basics",
     description: "I learned the basic react structures",
@@ -72,6 +80,12 @@ Includes progression mechanics and production systems.`,
     description: "The site I made for a client",
     image: img16,
     link:"http://www.ecedemirci.com/"
+  },
+    {
+    title: "karotmakinesi.com",
+    description: "The site I made for a client",
+    image: img19,
+    link:"https://karotmakinesi.com/"
   }
   ];
 
